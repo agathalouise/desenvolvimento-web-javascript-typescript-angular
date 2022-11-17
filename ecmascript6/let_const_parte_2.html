@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            //escopos: global, função, bloco
+
+            {
+            var serie = 'Friends'
+            let serie2 = 'Game of Thrones'   
+            }
+            
+            function escopoFuncao(){
+                console.log('funcao: ', serie)
+                console.log('funcao: ', serie2)
+            }
+
+            escopoFuncao()
+        </script>
+    </body>
+</html>

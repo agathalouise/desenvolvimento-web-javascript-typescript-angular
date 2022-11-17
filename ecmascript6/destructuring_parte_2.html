@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <script>
+            //destructuring assingment - contexto de objetos
+
+            let produto = {
+                descricao: 'Notebook',
+                preco: 2500,
+                detalhes: {
+                    fabricante: 'Abc',
+                    modelo: 'Xyz'
+                }
+            }
+
+            //let {descricao, preco} = produto
+            //console.log(descricao, preco)
+
+            //Nomeando aas variaveis com nomes diferente do original
+           // let {descricao: description, preco: price} = produto
+
+            //valores default para lidar com atributos undefined
+            //let {descricao: description, preco: price, desconto = 5} = produto
+
+            //recuperando descrição, fabricante e modelo
+            let {descricao, detalhes:{fabricante, modelo}} = produto
+
+
+            console.log(descricao, fabricante, modelo)
+        </script>
+    </body>
+</html>
